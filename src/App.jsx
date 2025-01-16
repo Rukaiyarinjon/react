@@ -17,6 +17,7 @@ function App() {
     <>
       <BrowserRouter>
       {/* header component  */}
+
       <Header></Header>
       <Sidebar></Sidebar>
         {/* Render the Navber outside of Routes so it appears on all pages */}
@@ -24,7 +25,6 @@ function App() {
         <Routes>
           <Route path='/' element={<Home/>} />
           <Route path='/card' element={<Card />} />
-          <Route path='/card' element={<Card/>} />
           <Route path='/table' element={<Table />} />
         </Routes>
 
